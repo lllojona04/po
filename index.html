@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ustedes, Chicas 💕</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f7;
+            color: #d23369;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff2d75;
+            font-size: 26px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #ff2d75, #ff6b9d);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 45, 117, 0.3);
+        }
+        .oso-tq {
+            font-size: 50px;
+            margin: 20px 0;
+            animation: pulse 1.5s infinite;
+        }
+        .mensaje-tq {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff2d75;
+            margin-top: 10px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Caja de sorpresa */
+        .romantic-box {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            background: #ffe4ec;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(255, 105, 135, 0.3);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .romantic-message {
+            font-size: 20px;
+            color: #c2185b;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .romantic-box img {
+            width: 280px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Para todas ustedes, chicas hermosas 🌸</h1>
+        <p>Esto va para cada una de ustedes, que llenan de luz, risas y buena vibra este grupo. 💕</p>
+
+        <div class="oso-tq">🧸</div>
+        <div class="mensaje-tq">¡Las queremos mucho!</div>
+
+        <a class="button" onclick="mostrarSorpresa()">Descubre tu sorpresa 💖</a>
+
+        <!-- Caja de amor grupal -->
+        <div class="romantic-box" id="romanticBox">
+            <div class="romantic-message">
+                Gracias por ser parte de este grupo tan especial. Son únicas, fuertes, bellas y súper valiosas. ¡Nunca lo olviden! 💫💗
+            </div>
+            <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Te queremos chicas">
+        </div>
+    </div>
+
+    <script>
+        function mostrarSorpresa() {
+            const box = document.getElementById('romanticBox');
+            box.style.display = 'block';
+            document.querySelector('.button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
